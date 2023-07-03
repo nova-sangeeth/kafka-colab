@@ -1,0 +1,20 @@
+bitnami docker compose for kafka
+
+
+curl -sSL https://raw.githubusercontent.com/bitnami/containers/main/bitnami/kafka/docker-compose.yml > docker-compose.yml
+
+
+docker pull bitnami/kafka:latest
+
+reference links: https://che-kulhan.medium.com/how-to-use-pyspark-streaming-with-google-colaboratory-d08ded30cabf
+                https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#overview
+                https://colab.research.google.com/github/recohut/notebook/blob/master/_notebooks/2021-06-25-kafka-spark-streaming-colab.ipynb#scrollTo=kx4Ktlvr1Jfc
+
+windowing and stream joins
+
+
+Task breakdown:
+1. First get a notebook with kafka + pyspark working -  (Updating kafka to latest version in the second notebook I shared should do)
+2. Create some Kafka topics and put data into them -
+3. Create examples for windowing by connecting pyspark streaming to kafka topic -
+4. Create examples for stream join by connecting pyspark with kafka topic 
